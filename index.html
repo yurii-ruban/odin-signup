@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Signup</title>
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
+
 <body>
-    
+    <aside>
+        <div class="icon-holder">
+            <img src="./img/odin-lined.png"/>
+            <p>Odin</p>
+        </div>
+
+        <p class="image-info">Photo by 
+            <a href="https://unsplash.com/@lexilaginess" target="_blank" rel="noopener noreferrer">Lexi Laginess</a>
+            on <a href="https://unsplash.com/ " target="_blank" rel="noopener noreferrer">Unsplash</a>
+        </p>
+    </aside>
+
+    <main>
+        <div class="header">
+            <h2>This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams.</h2>
+            <p>Sign up <em>now</em> to get started.</p>
+
+            <p>You know you want to</p>
+        </div>
+
+        <form action="https://httpbin.org/post" method="post">
+            <fieldset class="controls">
+                <legend>Let's do this!</legend>
+
+                <div class="inputrow">
+                    <div class="controlgroup">
+                        <label for="name">First name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="controlgroup">
+                        <label for="surname">Last Name</label>
+                        <input type="text" id="surname" name="surname">
+                    </div>
+                </div>
+
+                <div class="inputrow">
+                    <div class="controlgroup">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="controlgroup">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" pattern="" id="phone" name="phone">
+                    </div>
+                </div>
+
+                <div class="inputrow">
+                    <div class="controlgroup">
+                        <label for="entrypassword">Password</label>
+                        <input type="password" id="entrypassword" required>
+                    </div>
+                    <div class="controlgroup">
+                        <label for="acceptpassword">Confirm Password</label>
+                        <input type="password" id="acceptpassword" name="password" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit">Create Account</button>
+            <p class="signin">Already have an account? <a href="#">Log in</a></p>
+        </form>
+    </main>
 </body>
+
 </html>

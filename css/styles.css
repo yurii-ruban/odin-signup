@@ -1,5 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap');
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url(../fonts/norse-bold-webfont.woff2) format("woff2"),
+        url(../fonts/norse-bold-webfont.woff) format ("woff");
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    font-family: Roboto, Verdana, sans-serif;
+}
+
+aside {
+    position: relative;
+    flex-basis: 30%;
+    background-image: url("../img/hotel.avif");
+    background-size: cover;
+}
+
+.icon-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 60%);
+    height: 15%;
+    padding: 1rem;
+    margin-top: 45%;
+    gap: 0.7em;
+
+    p {
+        font-family: "Norse Bold", sans-serif;
+        font-size: 96px;
+        color: white;
+    }
+
+    img {
+        display: block;
+        height: 100%;
+    }
+}
+
+.image-info {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    
+    a {
+        color: white;
+    }
+
+    a:active {
+        color: rgb(121, 242, 121);
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
