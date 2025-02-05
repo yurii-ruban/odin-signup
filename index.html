@@ -25,9 +25,9 @@
         <div class="header">
             <h2>This is not a real online service! You know you need something like this in your life to help you
                 realize your deepest dreams.</h2>
-            <p>Sign up <em>now</em> to get started.</p>
+            <h2>Sign up <em>now</em> to get started.</h2>
 
-            <p>You know you want to</p>
+            <h2>You <em>know</em> you want to.</h2>
         </div>
 
         <form action="https://httpbin.org/post" method="post">
@@ -37,11 +37,11 @@
                 <div class="inputrow">
                     <div class="controlgroup">
                         <label for="name">First name</label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" pattern="^([A-Z])+[a-zA-Z]*$" title="This field is required. Please input your valid name which contains only latin alphabet letters" minlength="2" maxlength="16" required>
                     </div>
                     <div class="controlgroup">
-                        <label for="surname">Last Name</label>
-                        <input type="text" id="surname" name="surname">
+                        <label for="surname">Last Name</label> 
+                        <input type="text" id="surname" pattern="^([A-Z])+[a-zA-Z]*$" title="Surname should start with capital letter and have more than 1 symbol!" name="surname">
                     </div>
                 </div>
 
@@ -52,24 +52,24 @@
                     </div>
                     <div class="controlgroup">
                         <label for="phone">Phone Number</label>
-                        <input type="text" pattern="" id="phone" name="phone">
+                        <input type="text" id="phone" name="phone" pattern="^[\+]?[\(]?[0-9]{3}[\)]?[\s]?[0-9]{2}[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"/>
                     </div>
                 </div>
 
                 <div class="inputrow">
                     <div class="controlgroup">
                         <label for="entrypassword">Password</label>
-                        <input type="password" id="entrypassword" required>
+                        <input type="password" id="entrypassword" minlength="6" maxlength="16" required>
                     </div>
                     <div class="controlgroup">
                         <label for="acceptpassword">Confirm Password</label>
-                        <input type="password" id="acceptpassword" name="password" required>
+                        <input type="password" id="acceptpassword" name="password" minlength="6" maxlength="16" required>
                     </div>
                 </div>
             </fieldset>
 
             <button type="submit">Create Account</button>
-            <p class="signin">Already have an account? <a href="#">Log in</a></p>
+            <p class="signin">Already have an account? <a href="#" target="_blank" rel="noopener noreferrer">Log in</a></p>
         </form>
     </main>
 </body>
