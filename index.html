@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Signup</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <script defer src="./js/password-validator.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
             <h2>You <em>know</em> you want to.</h2>
         </div>
 
-        <form action="https://httpbin.org/post" method="post">
+        <form action="https://httpbin.org/post" method="post" class="signin-form">
             <fieldset class="controls">
                 <legend>Let's do this!</legend>
 
@@ -64,6 +65,7 @@
                     <div class="controlgroup">
                         <label for="acceptpassword">Confirm Password</label>
                         <input type="password" id="acceptpassword" name="password" minlength="6" maxlength="16" required>
+                        <p class="password-error">* Passwords must match each other. Try again.</p>
                     </div>
                 </div>
             </fieldset>

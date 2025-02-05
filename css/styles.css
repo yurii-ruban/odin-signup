@@ -144,13 +144,30 @@ h2:last-child {
         border: 1px solid red;
     }
 
-    input:user-valid {
+    input:user-valid,
+    input.valid {
         border: 1px solid green;
     }
 
     input:focus {
         border: 1px solid #1E4FD8;
     }
+
+    input.invalid {
+        border: 1px solid red;
+    }
+
+    .password-error {
+        font-size: 10px;
+        display: none;
+    }
+
+    .invalid.password-error {
+        display: block;
+        color: red;
+    }
+
+
 }
 
 button,
